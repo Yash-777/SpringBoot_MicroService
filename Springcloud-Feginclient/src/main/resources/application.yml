@@ -1,0 +1,31 @@
+
+# Spring properties http://localhost:8077/FeignClient
+spring:
+  application:
+     name: OpenFeign # Service registers under this name
+
+# HTTP Server - HTTP (Tomcat) port
+server:
+  port: 8077   # HTTP (Tomcat) port
+
+feign:
+  # Set up log level for feign behaviors
+  log-level: BASIC
+  # Set up logger type to append logs
+  logger-type: SLF4J
+  # Packages to be scanned for interfaces declared with @FeignClient
+#  base-packages: com.github.yash777.SpringcloudFeginclient.fegin.component
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic
+
+logging.level.com.github.yash777.SpringcloudFeginclient.fegin: DEBUG
+
+# Discovery Server Access
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:1111/eureka/

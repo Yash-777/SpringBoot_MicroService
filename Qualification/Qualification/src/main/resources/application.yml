@@ -1,0 +1,16 @@
+
+# Spring properties
+spring:
+  application:
+     name: Qualification # Service registers under this name
+
+# HTTP Server - HTTP (Tomcat) port
+server:
+  port: 8081   # HTTP (Tomcat) port
+
+
+# Discovery Server Access
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:1111/eureka/

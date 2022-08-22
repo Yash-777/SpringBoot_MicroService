@@ -1,0 +1,17 @@
+## https://www.youtube.com/watch?v=BnknNTN8icw&list=LL&index=17&t=183s&ab_channel=DailyCodeBuffer
+
+
+H2-DataBase [, mem:dbQualificaiton]
+http://localhost:8080/h2-console
+JDBC
+http://localhost:8080/address/init
+http://localhost:8080/address/current?id=GITHUB-777
+JPA
+http://localhost:8080/user/init
+
+
+http://localhost:8081/eucation/init
+
+===========================
+
+https://www.baeldung.com/java-spring-mockito-mock-mockbean

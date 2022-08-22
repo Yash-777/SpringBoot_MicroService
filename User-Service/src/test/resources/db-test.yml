@@ -1,0 +1,22 @@
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:db;MODE=MySQL;DB_CLOSE_DELAY=-1;IGNORECASE=TRUE
+    username: sa
+    secret: 
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    generate:
+      ddl: true
+    hibernate:
+      ddl-auto: create
+    show_sql: true
+
+hibernate:
+  show_sql: true
+  hbm2ddl:
+    auto: create-drop
+
+entitymanager:
+  packagesToScan: com.github.yash777.User.entity

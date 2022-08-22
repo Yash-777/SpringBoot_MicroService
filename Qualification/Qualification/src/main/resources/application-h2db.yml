@@ -1,0 +1,14 @@
+
+# Postgres db configuration
+spring:
+  datasource:
+    platform: h2
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:dbQualificaiton;MODE=MySQL;DB_CLOSE_DELAY=-1;IGNORECASE=TRUE
+    username: sa
+    password: 
+  jpa:
+    database_platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
